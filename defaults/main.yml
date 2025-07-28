@@ -1,0 +1,4 @@
+---
+# defaults file for ansible-role-pve-solarized
+css_url: https://github.com/sachapan/SolarPVE/raw/refs/heads/main/solarized.css
+index_url: https://github.com/sachapan/SolarPVE/raw/refs/heads/main/Example/index.html.tpl

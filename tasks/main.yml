@@ -1,0 +1,11 @@
+---
+- name: Download color scheme from github
+  ansible.builtin.get_url:
+    url: "{{ css_url }}"
+    dest: /usr/share/pve-manager/images/solarized.css
+- name: Download patched html from github
+  ansible.builtin.get_url:
+    url: "{{ index_url }}"
+    dest: /usr/share/pve-manager/index.html.tpl
+  notify: Restart pveproxy service
+
